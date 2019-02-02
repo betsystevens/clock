@@ -1,0 +1,39 @@
+body, html {
+	margin: 20px;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay {
+	position: absolute;
+	transform: rotate(-90deg); /* change default 3:00/horizontal position of hands to 12:00 */
+
+	/* -transition & timing is nice effect but it causes a backwards*/
+	/* -rewind from 360degrees to 1degrees*/
+	/* -maybe add later with with logic to fix*/
+	/*transition: all 0.05s;  */
+  /*transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);*/
+
+}
+
+.hand {
+	width: 125px;
+	height: 6px;
+	top: -3px;
+	background: black;
+	position: absolute;
+}
+.hour {
+	width: 100px;
+}
+.sec {
+	height: 4px;
+	top: -2px;
+}
